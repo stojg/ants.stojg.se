@@ -1,0 +1,6 @@
+.idea
+.gitignore
+.git
+config.rb
+Makefile
+Dockerfile
