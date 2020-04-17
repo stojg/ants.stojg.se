@@ -9,4 +9,5 @@ run: build
 
 push: build
 	docker build . -t stojg/ants.stojg.se:latest -t stojg/ants.stojg.se:$(shell git rev-parse --verify HEAD)
-	docker push stojg/ants.stojg.se
+	docker push stojg/ants.stojg.se:latest
+	docker push stojg/ants.stojg.se:$(shell git rev-parse --verify HEAD)
